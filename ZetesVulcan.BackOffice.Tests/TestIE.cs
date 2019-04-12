@@ -32,7 +32,7 @@ namespace ZetesVulcan.BackOffice.Tests
             Assert.AreEqual(value3, returnValue);
 
             //double returnValue = _login.returnValue_1();
-            //Assert.AreEqual(value2, returnValue);;
+            //Assert.AreEqual(value2, returnValue);
 
         }
 
