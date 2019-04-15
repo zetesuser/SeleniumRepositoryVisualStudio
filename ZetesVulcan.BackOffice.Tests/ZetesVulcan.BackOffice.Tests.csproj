@@ -9,8 +9,8 @@
     <ProjectGuid>{8EDF4429-251A-416D-BB68-93F227191BCF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Conversao.Tests</RootNamespace>
-    <AssemblyName>Conversao.Tests</AssemblyName>
+    <RootNamespace>ZetesVulcan.BackOffice.Tests</RootNamespace>
+    <AssemblyName>ZetesVulcan.BackOffice.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
