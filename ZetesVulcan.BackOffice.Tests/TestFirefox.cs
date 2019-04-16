@@ -19,7 +19,6 @@ namespace ZetesVulcan.BackOffice.Tests
             _login.LoadPage();
         }
 
-        //[TestCase("admin", "zetes1234")]
         [TestCase("admin", "", "Palavra-chave é de preenchimento obrigatório")]
         public void Validate_1 (string value1, string value2, string value3)
         {
