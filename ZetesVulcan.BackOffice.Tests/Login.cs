@@ -39,7 +39,7 @@ namespace ZetesVulcan.BackOffice.Tests
 
         public void LoadPage()
         {
-            _driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(5);
+            _driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(30);
             _driver.Navigate().GoToUrl(ConfigurationManager.AppSettings["UrlBackOffice"]);
         }
 
@@ -63,7 +63,7 @@ namespace ZetesVulcan.BackOffice.Tests
             else
                 setbuttonbtnprimary.SendKeys(Keys.Enter);
 
-            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(30));
             wait.Until((d) => d.FindElement(By.Id("Password-error")) != null);
         }
 
