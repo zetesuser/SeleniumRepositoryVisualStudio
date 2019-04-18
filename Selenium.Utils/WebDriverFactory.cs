@@ -28,6 +28,7 @@ namespace Selenium.Utils
                     var options = new InternetExplorerOptions();
                     {
                         options.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
+                        options.AddAdditionalCapability("javascriptEnabled", "true");
                     }
                     webDriver = new InternetExplorerDriver(PathDriver,options);
                     break;
