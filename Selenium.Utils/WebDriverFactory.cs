@@ -31,6 +31,7 @@ namespace Selenium.Utils
                         options.AddAdditionalCapability("javascriptEnabled", "true");
                     }
                     webDriver = new InternetExplorerDriver(PathDriver,options);
+                    webDriver.SwitchTo().DefaultContent();
                     break;
             }
 
