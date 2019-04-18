@@ -12,6 +12,7 @@ namespace Selenium.Utils
 {
     public static class WebDriverFactory
     {
+        
         public static IWebDriver ReturnWebDriver(
             Brower brower, string PathDriver = null)
         {
@@ -28,7 +29,9 @@ namespace Selenium.Utils
                     var options = new InternetExplorerOptions();
                     {
                         options.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
+                        options.EnsureCleanSession = true;
                         options.AddAdditionalCapability("javascriptEnabled", "true");
+                        
                     }
                     webDriver = new InternetExplorerDriver(PathDriver,options);
                     webDriver.SwitchTo().DefaultContent();
