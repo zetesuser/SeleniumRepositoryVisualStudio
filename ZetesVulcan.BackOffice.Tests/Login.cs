@@ -32,7 +32,7 @@ namespace ZetesVulcan.BackOffice.Tests
             else
                 if (brower == Brower.InternetExplorer)
                 {
-                    pathDriver = ConfigurationManager.AppSettings["PathDriverIE"];
+                    pathDriver = ConfigurationManager.AppSettings["PathDriverIE"]; 
                 }
             _driver = WebDriverFactory.ReturnWebDriver(brower, pathDriver);
         }
@@ -41,11 +41,12 @@ namespace ZetesVulcan.BackOffice.Tests
         {
             _driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(30);
             _driver.Navigate().GoToUrl(ConfigurationManager.AppSettings["UrlBackOffice"]);
+            _driver.Manage().Window.Maximize();
         }
 
         public void SetField_Username(string value)
         {
-            IWebElement setfieldUsername = _driver.FindElement(By.Id("Username"));
+            IWebElement setfieldUsername = _driver.FindElement(By.Name("Username"));
             setfieldUsername.SendKeys(value.ToString());
         }
 

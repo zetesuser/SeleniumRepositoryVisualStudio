@@ -27,7 +27,6 @@ namespace Selenium.Utils
                 case Brower.InternetExplorer:
                     webDriver = new InternetExplorerDriver(PathDriver);
                     break;
-
             }
 
             return webDriver;
