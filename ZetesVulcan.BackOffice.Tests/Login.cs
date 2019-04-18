@@ -46,7 +46,7 @@ namespace ZetesVulcan.BackOffice.Tests
 
         public void SetField_Username(string value)
         {
-            IWebElement setfieldUsername = _driver.FindElement(By.Name("Username"));
+            IWebElement setfieldUsername = _driver.FindElement(By.Id("Username"));
             setfieldUsername.SendKeys(value.ToString());
         }
 
