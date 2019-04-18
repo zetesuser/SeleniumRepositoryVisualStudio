@@ -25,7 +25,11 @@ namespace Selenium.Utils
                     webDriver = new ChromeDriver(PathDriver);
                     break;
                 case Brower.InternetExplorer:
-                    webDriver = new InternetExplorerDriver(PathDriver);
+                    var options = new InternetExplorerOptions();
+                    {
+                        options.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
+                    }
+                    webDriver = new InternetExplorerDriver(PathDriver,options);
                     break;
             }
 
