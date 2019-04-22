@@ -35,7 +35,8 @@ namespace Selenium.Utils
                         
                     }
                     webDriver = new InternetExplorerDriver(PathDriver,options);
-                    webDriver.SwitchTo().DefaultContent();
+                    //webDriver.SwitchTo().DefaultContent();
+                    webDriver.SwitchTo().ParentFrame();
                     break;
             }
 
