@@ -59,10 +59,10 @@ namespace ZetesVulcan.BackOffice.Tests
         public void SetButton_btnprimary()
         {
             IWebElement setbuttonbtnprimary = _driver.FindElement(By.ClassName("btn-primary"));
-            if (_brower != Brower.InternetExplorer)
+            //if (_brower != Brower.InternetExplorer)
                 setbuttonbtnprimary.Submit();
-            else
-                setbuttonbtnprimary.SendKeys(Keys.Enter);
+            //else
+            //    setbuttonbtnprimary.SendKeys(Keys.Enter);
 
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(30));
             wait.Until((d) => d.FindElement(By.Id("Password-error")) != null);
