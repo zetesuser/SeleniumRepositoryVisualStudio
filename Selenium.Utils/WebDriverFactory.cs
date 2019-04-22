@@ -28,6 +28,7 @@ namespace Selenium.Utils
                 case Brower.InternetExplorer:
                     var options = new InternetExplorerOptions();
                     {
+                        options.EnableNativeEvents = false;
                         options.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
                         options.EnsureCleanSession = true;
                         options.AddAdditionalCapability("javascriptEnabled", "true");
